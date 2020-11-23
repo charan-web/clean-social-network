@@ -14,7 +14,7 @@ let channels = document.querySelectorAll('.style-scope ytd-channel-renderer')
 
 // This is Latest JS version Async/Await code
 async function timer(i){
-    if(i < channels.length){
+    if(i <= channels.length){
         await subscribeBtn[i].click()
         await confirmBtn[0].click()
         i++
