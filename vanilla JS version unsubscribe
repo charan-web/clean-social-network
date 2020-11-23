@@ -13,7 +13,7 @@ let avatars = document.querySelectorAll('#avatar').length-1
 // This is Latest JS version Async/Await code
 async function timer(i){
     if(i < avatars){
-        await b[i].click()
+        await  subscribeBtn[i].click()
         await confirmBtn[0].click()
         i++
         timer(i)
