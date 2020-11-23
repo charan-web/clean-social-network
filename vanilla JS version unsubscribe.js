@@ -3,8 +3,7 @@
 // script for unsubscribe multiple channels in Youtube
 
 // Get the subscribed button
-let subscribeBtn = document.getElementsByTagName('paper-button')
-
+let subscribeBtn=document.querySelectorAll('.ytd-subscribe-button-renderer')
 // Get the confirmatin button (unsubscribe button)
 let confirmBtn =  document.querySelectorAll('#confirm-button')
 
