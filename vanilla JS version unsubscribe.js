@@ -4,12 +4,12 @@ let subscribeBtn = document.getElementsByTagName('paper-button')
 let confirmBtn =  document.querySelectorAll('#confirm-button')
 
 // Get the numbers of channels based on avatars
-let avatars = document.querySelectorAll('#avatar').length-1
+let avatars = document.querySelectorAll('#avatar').length
 
 
 // This is Latest JS version Async/Await code
 async function timer(i){
-    if(i < 5){
+    if(i < avatars){
         await subscribeBtn[i].click()
         await confirmBtn[0].click()
         i++
