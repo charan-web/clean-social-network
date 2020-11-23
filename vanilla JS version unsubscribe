@@ -1,6 +1,3 @@
-// script for unsubscribe multiple channels in Youtube
-
-// Get the subscribed button
 let subscribeBtn = document.getElementsByTagName('paper-button')
 
 // Get the confirmatin button (unsubscribe button)
@@ -12,8 +9,8 @@ let avatars = document.querySelectorAll('#avatar').length-1
 
 // This is Latest JS version Async/Await code
 async function timer(i){
-    if(i < avatars){
-        await  subscribeBtn[i].click()
+    if(i < 5){
+        await subscribeBtn[i].click()
         await confirmBtn[0].click()
         i++
         timer(i)
