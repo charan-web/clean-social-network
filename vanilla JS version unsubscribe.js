@@ -4,8 +4,6 @@
 
 // Get the subscribed button
 let subscribeBtn=document.querySelectorAll('#subscribe-button yt-formatted-string')
-// Get the confirmatin button (unsubscribe button)
-let confirmBtn =  document.querySelectorAll('#confirm-button')
 
 //Get the channels
 let channels = document.querySelectorAll('.style-scope ytd-channel-renderer')
@@ -15,7 +13,8 @@ let channels = document.querySelectorAll('.style-scope ytd-channel-renderer')
 async function timer(i){
     if(i <= channels.length){
         await subscribeBtn[i].click()
-        await confirmBtn[0].click()
+        // Get the confirmatin button (unsubscribe button)
+        await document.querySelectorAll('#confirm-button')[0].click()
         i++
         timer(i)
     }
